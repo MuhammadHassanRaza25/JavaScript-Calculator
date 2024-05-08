@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    
+<div class="Calculator" data-aos="zoom-in">
+    <input class="input" type="text" id="input" disabled ><br>
+
+    <div style="text-align: left;" class="btnrow">
+        <button style="background-color:rgb(255, 170, 0);" onclick="clean()"><span>C</span></button>
+        <button style="background-color:rgb(255, 170, 0);" onclick="addValue('%')"><span>%</span></button>
+        <button style="background-color:rgb(255, 170, 0);" onclick="addValue('/')"><span>/</span></button>
+    </div>
+
+    <div class="btnrow">
+        <button onclick="addValue(7)">7</button>
+        <button onclick="addValue(8)">8</button>
+        <button onclick="addValue(9)">9</button>
+        <button style="background-color:rgb(255, 170, 0);" onclick="addValue('*')"><span>x</span></button>
+    </div>
+
+    <div class="btnrow">
+        <button onclick="addValue(4)">4</button>
+        <button onclick="addValue(5)">5</button>
+        <button onclick="addValue(6)">6</button>
+        <button style="background-color:rgb(255, 170, 0);" onclick="addValue('-')"><span>-</span></button>
+    </div>
+
+    <div class="btnrow">
+    <button onclick="addValue(1)">1</button>
+    <button onclick="addValue(2)">2</button>
+    <button onclick="addValue(3)">3</button>
+    <button style="background-color:rgb(255, 170, 0);" onclick="addValue('+')"><span>+</span></button>
+    </div>
+
+    <div class="btnrow" style="text-align: left;">
+     <button onclick="addValue('00')">00</button>
+     <button onclick="addValue(0)">0</button>
+     <button  style="background-color:rgb(255, 170, 0);" onclick="result()"><span>=</span></button>
+    </div>
+
+</div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+
+<script src="app.js"></script>
+</body>
+</html>
