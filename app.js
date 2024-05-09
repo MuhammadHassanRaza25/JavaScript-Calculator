@@ -14,6 +14,11 @@ function result() {
    var input = document.getElementById('input')
    input.value = eval(input.value)
 }
+
+function cut() {
+    var input = document.getElementById('input')
+   input.value = input.value.slice(0,input.value.length -1)
+}
 // eval value ko calculate karta hai.
 
 // hamny html main function ke name addValue main jo number die 
