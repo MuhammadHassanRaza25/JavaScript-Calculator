@@ -4,14 +4,12 @@
     font-family: sans-serif;
 }
 body{
-    width: 100%;
-    height: 540px;
     background-image: radial-gradient(circle, darkcyan, darkcyan, black);
     display: flex;
     justify-content: center;
-    margin-top: 4%;
 }
 .Calculator{
+    margin-top: 4%;
     background-color:black;
     text-align: center;
     padding: 20px;
@@ -44,4 +42,69 @@ input{
 }
 span{
     color:white;
+}
+
+ /* ipads */
+@media (max-width:1024px) {
+    .Calculator{
+        margin-top: 20%;
+        font-size: 100px;
+    }
+    input{
+        font-size: 80px;
+        width: 450px;
+    }
+    .btnrow button{
+        width: 80px;
+        height: 80px;
+        font-size: 38px;
+    }
+
+}
+/* ipads */
+@media (max-width:768px) {
+  .Calculator{
+    margin-top: 13%;
+  }
+}
+/* phones */
+@media (max-width:412px) {
+.Calculator{
+    text-align: left;
+    width: 100%;
+    height: 800px;
+    margin-top: 0%;
+  }
+  .btnrow button{
+    width: 45px;
+    height: 45px;
+    font-size:20px;
+  }
+}
+/* phones */
+@media (max-width:403px) {
+      .btnrow button{
+        width: 40px;
+        height: 40px;
+    }
+    input{
+        width: 330px;
+    }
+}
+/* phones */
+@media (max-width:383px) {
+    .btnrow button{
+      width: 38px;
+      height: 38px;
+      font-size: 15px;
+  }
+ 
+}
+/* phones */
+@media (max-width:374px) {
+    .btnrow button{
+      width: 30px;
+      height: 30px;
+      font-size: 15px;
+  }
 }
