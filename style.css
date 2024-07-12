@@ -44,36 +44,12 @@ span{
     color:white;
 }
 
- /* ipads */
-@media (max-width:1024px) {
-    .Calculator{
-        margin-top: 20%;
-        font-size: 100px;
-    }
-    input{
-        font-size: 80px;
-        width: 450px;
-    }
-    .btnrow button{
-        width: 80px;
-        height: 80px;
-        font-size: 38px;
-    }
-
-}
-/* ipads */
-@media (max-width:768px) {
-  .Calculator{
-    margin-top: 13%;
-  }
-}
 /* phones */
-@media (max-width:412px) {
+@media (max-width:430px) {
 .Calculator{
     text-align: left;
-    width: 100%;
-    height: 800px;
-    margin-top: 0%;
+    margin-top: 25%;
+    width: 80%;
   }
   .btnrow button{
     width: 45px;
@@ -88,20 +64,31 @@ span{
         height: 40px;
     }
     input{
-        width: 330px;
+        width: 280px;
     }
 }
 /* phones */
 @media (max-width:383px) {
+    .Calculator{
+        margin-top: 30%;
+      }
+    input{
+        width: 260px;
+    }
     .btnrow button{
       width: 38px;
       height: 38px;
       font-size: 15px;
   }
- 
 }
 /* phones */
 @media (max-width:374px) {
+    .Calculator{
+        margin-top: 35%;
+      }
+      input{
+        width: 230px;
+    }
     .btnrow button{
       width: 30px;
       height: 30px;
